@@ -1,0 +1,108 @@
+@media all and (max-width: 600px),
+all and (max-width: 768px) {
+
+    /*********************nav*********************************/
+    nav {
+        position: absolute;
+    }
+
+    nav .navs ul {
+        flex-direction: column;
+
+    }
+
+    nav .navs ul li {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    nav .logo {
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+
+    /**********************home*******************/
+    .home {
+        height: auto;
+    }
+
+    .home .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home .container .caption {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        padding-top: 200px;
+    }
+
+    .home .container .plat {
+        width: 100%;
+    }
+
+    .Chefs .container .chef-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .Chefs .container .chef-cards .chef-card {
+        width: 100%;
+    }
+
+    /******************gallery************/
+    .Gallery .container .photos {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        height: auto;
+    }
+
+
+    .Gallery .photos picture {
+        width: 100%;
+    }
+
+    .Gallery {
+        padding-bottom: 50px;
+    }
+
+    /******************contact******************/
+    .contact .container .frame,
+    .add,
+    .Call,
+    .hour,
+    .email-contact {
+        width: 100%;
+    }
+
+    .contact .container .email-contact {
+        width: 100%;
+    }
+
+    .contact form .text,
+    .email {
+        width: 97%;
+    }
+
+/****************footer***************/
+footer{
+    height: auto;
+    padding-bottom: 150px;
+    
+}
+footer .about{
+    width: 100%;
+}
+
+footer .subscription,.contact-details{
+    width: 100%;
+}
+}

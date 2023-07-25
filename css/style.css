@@ -1,0 +1,990 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Amatic SC', cursive;
+}
+
+p,
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+/*****************SCROLL***************/
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #212529;
+    border-radius: 10px;
+}
+
+
+/***************NAV**************/
+nav .container {
+    width: 88%;
+    margin: auto;
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 0px 14px 0px #0000001b;
+
+}
+
+nav .container .logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 22px;
+}
+
+
+nav .container .logo a {
+    text-decoration: none;
+    color: RGB(33, 37, 41);
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+nav .container .logo span {
+    color: RGB(230, 20, 20);
+}
+
+nav .container .navs {
+    width: 60%;
+    color: RGB(79, 79, 90);
+    font-size: 17px;
+    padding-top: 12px;
+
+
+}
+
+nav .container .navs ul li div {
+    background-color: RGB(230, 20, 20);
+    border-radius: 5px;
+    position: absolute;
+
+}
+
+nav .container .navs ul li {
+    position: relative;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+nav .container .navs ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+nav .container .icon {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav i {
+    color: black;
+    font-size: 25px;
+}
+
+nav .container .navs ul li a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: RGB(127, 127, 144);
+    font-size: 17px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+
+}
+
+nav .container .navs ul li a:hover {
+    color: #000;
+}
+
+body:not(body:has(:target)) li a[href="#home"],
+body:has(.home:target) li a[href="#home"],
+body:has(.contact:target) li a[href="#contact"],
+body:has(.Gallery:target) li a[href="#Gallery"],
+body:has(.Chefs:target) li a[href="#Chefs"] {
+    color: #000;
+    border-bottom: 3px solid #CE1212;
+}
+
+/***********************HOME***********************/
+.home {
+    display: flex;
+    width: 100%;
+    background-color: #EEEEEE;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body:has(.home:target) .home_link {
+    color: black;
+}
+
+.home .container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home .container .caption {
+    width: 35%;
+    margin-top: 110px;
+    margin-right: 310px;
+    margin-top: 70px;
+    color: RGB(55, 55, 63);
+
+}
+
+.home .container .caption h2 {
+    font-size: 65px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.home .container .caption p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+
+}
+
+.home .container .caption .buttons {
+
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+
+}
+
+.home .container .caption .btn1 {
+    background-color: #CE1212;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 100px;
+    border-top-left-radius: 10px;
+    transition-duration: 0.3s;
+    margin-right: 20px;
+
+}
+
+.home .container .caption .btn1 a {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+}
+
+
+.home .container .caption .btn1:hover {
+    background-color: RGB(230, 20, 20);
+
+}
+
+
+.home .container .caption .btn2 {
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-align: center;
+    width: 200px;
+
+
+}
+
+.home .container .caption .btn2 a {
+    color: #37373F;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.home .container .caption .btn2:hover a {
+    color: #CE1212;
+}
+
+.home .container .plat {
+    width: 38%;
+    display: flex;
+    padding-top: 110px;
+}
+
+.home .container .caption .buttons .btn2 .icon {
+    width: 50px;
+    height: 50px;
+    border-left: 2px solid #CE1212;
+    background-image: linear-gradient(to right, #CE1212 0 50%, transparent 50% 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    position: relative;
+}
+
+.home .container .caption .buttons .btn2 .icon i {
+    color: black;
+    z-index: 400;
+
+}
+
+.home .container .caption .buttons .btn2 .icon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: inherit;
+}
+
+.home img {
+    filter: drop-shadow(1px 1px 3px black);
+
+
+}
+
+@keyframes vibrate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-1deg);
+    }
+
+    20% {
+        transform: rotate(1deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(-1deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(-1deg);
+    }
+
+    80% {
+        transform: rotate(1deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+.plat img:hover {
+    animation: vibrate 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/*********************************************************************/
+.Chefs {
+    overflow: hidden;
+    padding-bottom: 150px;
+    margin-bottom: 20px;
+
+}
+
+.Chefs .container {
+    width: 89%;
+    margin: auto;
+}
+
+.chef-head {
+    padding-top: 100px;
+}
+
+.Chefs .chef-head h2 {
+    color: RGB(127, 127, 144);
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 8px;
+    font-weight: 400;
+
+
+}
+
+.Chefs .chef-head .p1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    color: RGB(33, 37, 41);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.Chefs .chef-head span {
+    color: RGB(206, 18, 18);
+}
+
+.chef-cards {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chef-card {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.chef-card .chef-information p {
+    font-size: 15px;
+    font-weight: 400;
+    color: RGB(127, 127, 144);
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.Chefs .container ul {
+    position: absolute;
+    top: 15px;
+    background-color: #D4C9C2;
+
+    right: -60;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition-duration: 0.7s;
+
+
+}
+
+.Chefs .container .chef-card:hover ul {
+    right: 0;
+}
+
+.Chefs .container .chef-card:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.Chefs .container a:hover {
+    color: RGBA(55, 55, 63, 0.9);
+
+}
+
+.Chefs .container ul li {
+    padding: 12px 15px;
+}
+
+.Chefs .container ul li a {
+    font-size: 18px;
+    color: #37373f66;
+    transition-duration: 0.5s;
+    font-weight: 400;
+}
+
+
+.Chefs .container .picture {
+    position: relative;
+}
+
+.Chefs .container .picture:before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url(../photo/team-shape.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 3.75rem;
+}
+
+.chef-cards .chef-information h3 {
+    font-size: 18.72px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: RGBA(55, 55, 63, 0.9);
+    padding-bottom: 10px;
+
+
+}
+
+.chef-cards span {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: RGB(127, 127, 144);
+
+}
+
+.Chefs img {
+    border-radius: 8px;
+}
+
+/**********************************************************************/
+.Gallery {
+    background-color: #EEEEEE;
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+
+.Gallery .gallery-title p {
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    padding-bottom: 20px;
+
+}
+
+
+.Gallery span {
+    color: RGB(230, 20, 20);
+    font-family: 'Amatic SC', cursive;
+
+}
+
+.Gallery h2 {
+    font-family: 'Inter', sans-serif;
+    color: RGB(127, 127, 144);
+    font-size: 14px;
+
+}
+
+.Gallery .photos {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 87%;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+    height: 1300px;
+}
+
+.photos picture {
+    width: 30%;
+    border: 3px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.photos picture:hover .overlay {
+    top: 0;
+}
+
+.photos picture:hover img {
+    scale: 1.2;
+}
+
+.photos picture img {
+    transition: 1s;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    transition-duration: 0.5s;
+
+
+
+}
+
+.Gallery .picture .overlay h2 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+
+}
+/***************************************************/
+
+.contact {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact .container {
+    width: 86%;
+    margin: auto;
+}
+
+.contact .contact-head h2 {
+    font-size: 14px;
+    color: RGB(127, 127, 144);
+    font-weight: 400;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.contact .contact-head p {
+    font-weight: 400;
+    color: #212529;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.map {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.map .frame {
+    margin: auto;
+    overflow: hidden;
+
+
+}
+
+iframe {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.contact .container .contact-details {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact .container .contact-details h3 {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: RGB(125, 125, 125);
+    margin: 0px 0px 5px;
+
+}
+
+.contact .contact-details .email-contact,
+.call,
+.hour,
+.add {
+    color: RGB(33, 37, 41);
+    width: 47%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color:
+        #F5F5F5;
+    padding: 10px;
+
+}
+
+.contact .contact-details .icon {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:
+        RGB(206, 18, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 15px;
+    transition-duration: 0.5s;
+}
+
+.contact .contact-details .icon:hover {
+    background-color: white;
+    color: #CE1212;
+    border: #CE1212 1px solid;
+}
+
+.contact span {
+    color: RGB(206, 18, 18);
+}
+
+.contact .contact-details .address,
+.email-us,
+.opening-hour,
+.call-us {
+    text-align: start;
+}
+
+form {
+
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    box-shadow: 10px;
+    box-shadow: 0 0 1.875rem #00000014;
+    padding-top: 20px;
+
+}
+
+.text,
+.email {
+    width: 48%;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    border: solid 2px;
+    border-color: #F5F5F5;
+}
+
+
+
+.subject {
+    width: 97%;
+    height: 50px;
+    border: none;
+    border: solid 2px;
+    border-color: #F5F5F5;
+    padding-left: 10px;
+
+}
+
+textarea {
+    width: 97%;
+    height: 120px;
+    border: solid 2px;
+    border-color: #F5F5F5;
+    padding-left: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+form button {
+    margin-top: 20PX;
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    background-color: #CE1212;
+    color: white;
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+
+}
+
+form button:hover {
+    background-color: white;
+    color: #CE1212;
+    border: 2px solid #CE1212;
+}
+
+/**********************************************************************************************/
+footer {
+    background-image: linear-gradient(#0009, #0009),
+        url(textured-metal-background\ \(1\).jpg);
+    color: #fff;
+    box-shadow: 0px -1px 5px #0007;
+    background-size: contain;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+
+}
+
+footer h2,
+h3,
+h4 {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+footer .container .about .logo {
+    display: flex;
+}
+
+footer .container .about .logo h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+footer .container .about .logo h2::after {
+    content: ".";
+    color: RGB(230, 20, 20);
+}
+
+footer .container .about .logo .logo-image {
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+
+footer .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+
+}
+
+footer hr {
+    width: 40px;
+}
+
+footer .about p {
+    margin-block: 0.625rem;
+    text-align: start;
+    padding-left: 5px;
+}
+
+footer .about {
+    width: 25%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer .about .social-links .twitter,
+.facebook,
+.instagram,
+.linkedin {
+    transition-duration: 0.5s;
+}
+
+footer .about .social-links .twitter:hover i {
+    color: #1DA1F2;
+}
+
+footer .about .social-links .facebook:hover i {
+    color: #0B85EE;
+}
+
+footer .about .social-links .instagram:hover i {
+    color: #6A0037;
+}
+
+footer .about .social-links .linkedin:hover i {
+    color: #0A66C2;
+}
+
+footer .about a i {
+    color: #E61414;
+}
+
+footer .about .social-media {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd6;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin: 0px 0px 10px;
+    padding: 10px;
+    font-size: 18.72px;
+}
+
+footer .about .social-links {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .about .social-links i {
+    font-size: 30px;
+    color: white;
+    padding-right: 20px;
+}
+
+
+footer .subscription {
+    width: 45%;
+    padding-top: 20px;
+}
+
+footer .subscription a {
+    color: white;
+}
+
+footer .subscription-group button {
+    border: none;
+    background-color: RGB(230, 20, 20);
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 400;
+    color: white;
+
+}
+
+footer .container .subscription .subscription-box p {
+    padding: 20px 0;
+}
+
+footer .contact-details {
+    padding-top: 20px;
+}
+
+footer .quick-links .links {
+    display: flex;
+}
+
+footer .subscription-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+footer .subscription-group input {
+    flex-grow: 1;
+    padding: 0.625rem;
+}
+
+footer .subscription-group input:focus-visible {
+    outline: none;
+}
+
+footer .subscription-group button {
+    border-radius: 0;
+}
+
+footer .quick-links ul {
+    --gap: 1.25rem;
+    margin-top: 0.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--gap);
+}
+
+footer .contact-details li a {
+    color: white;
+}
+
+footer .quick-links ul li {
+    width: calc(calc(100% - var(--gap)) / 2);
+    padding: 5px;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+footer .quick-links ul li:hover {
+    transform: translateX(10px);
+    background-color: #222;
+}
+
+footer .quick-links ul li::before {
+
+    margin-right: 5px;
+}
+
+footer .contact-details h3 {
+    margin-bottom: 10px;
+}
+
+footer .contact-details ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .contact-details ul li i {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E61414;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 900;
+    transition-duration: 0.5s;
+}
+
+footer .contact-details ul li i:hover {
+    color: white;
+}
