@@ -432,16 +432,16 @@ RGB(159, 159, 159);
     font-style: italic;
 }
 
-.Chefs .container ul {
+.Chefs .container ul.chef-social {
     position: absolute;
     top: 15px;
     background-color: #D4C9C2;
 
-    right: -60;
+    right: -60px;
     border-radius: 5px;
     margin-right: 5px;
     transition-duration: 0.7s;
-
+/* display: none; */
 
 }
 
