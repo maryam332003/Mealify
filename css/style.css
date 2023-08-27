@@ -86,7 +86,12 @@ nav .container .logo a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
-
+.list-icon{
+    margin-left: 150px;
+    
+    padding: 10px;
+    /* display: none; */
+}
 nav .container .logo span {
     color: var(--span-color);
 }

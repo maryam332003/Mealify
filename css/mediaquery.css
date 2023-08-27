@@ -3,7 +3,7 @@ all and (max-width: 768px) {
 
     /*********************nav*********************************/
     nav {
-        position: absolute;
+        position: relative
     }
 
     nav .navs ul {
@@ -23,9 +23,47 @@ all and (max-width: 768px) {
         align-items: center;
     }
 
+    nav {
+        position: absolute;
+    }
+
+    nav .navs {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 20% !important;
+
+    }
+
+
+
+    nav .icon {
+        width: 30% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+
+    .logo {
+        width: 20% !important;
+    }
+    nav .navs ul {
+        display: none !important;
+
+    }
+    nav .container .navs .list-icon:hover+ul {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 95%;
+        background-color: #333333;
+    }
+
     /**********************home*******************/
     .home {
         height: auto;
+        padding-bottom: 50px;
     }
 
     .home .container {
@@ -88,21 +126,23 @@ all and (max-width: 768px) {
     }
 
     .contact form .text,
-    .email {
-        width: 97%;
+    .email,.subject,.message {
+        width: 90%;
     }
 
-/****************footer***************/
-footer{
-    height: auto;
-    padding-bottom: 150px;
-    
-}
-footer .about{
-    width: 100%;
-}
+    /****************footer***************/
+    footer {
+        height: auto;
+        padding-bottom: 150px;
 
-footer .subscription,.contact-details{
-    width: 100%;
-}
+    }
+
+    footer .about {
+        width: 100%;
+    }
+
+    footer .subscription,
+    .contact-details {
+        width: 100%;
+    }
 }
